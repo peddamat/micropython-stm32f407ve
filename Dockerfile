@@ -25,9 +25,3 @@ RUN cd ports/stm32/boards && git clone https://github.com/mcauser/BLACK_F407VE.g
 RUN cd /root/micropython/mpy-cross && make
 
 RUN cd /root/micropython/ports/stm32 && make submodules && make BOARD=BLACK_F407VE
-#COPY files/vimrc .vimrc
-
-#RUN pip install xlsx2csv pandas openpyxl globus-cli
-
-# Cleanup
-#RUN rm globus-config.tgz get-data.sh
